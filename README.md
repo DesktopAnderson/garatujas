@@ -93,19 +93,31 @@ A tag `<em>` indica que o texto entre `<em>` e `</em>` deve aparecer em itálico
 > ## ⚠️ Nota:
 > ### O HTML é uma linguagem de marcação, e seu principal objetivo é estruturar o conteúdo de uma página web. Caso pesquise na internet, notará que existem outras tags para aplicar formatações como negrito e itálico, como `<b>` e `<i>`, respectivamente. No entanto, as tags `<strong>` e `<em>` são consideradas mais semânticas, pois indicam a importância do texto, enquanto as tags `<b>` e `<i>` são puramente de formatação visual. Portanto, é recomendado usar as tags semânticas para melhorar a acessibilidade e a compreensão do conteúdo. `<strong>` e `<em>` fazem sentido tanto para leitores sem deficiência quanto para leitores com deficiência, pois indicam a importância do texto, enquanto `<b>` e `<i>` são puramente de formatação visual e podem não ser interpretados corretamente por leitores de tela ou outros dispositivos assistivos.
 
-Esta é a sintaxe básica do HTML, e existem muitas outras tags e atributos que podem ser usados para criar páginas web mais complexas e interativas. A sugestão de como aprender HTML é desenhar a estrutura de uma página web em um papel, identificando os diferentes elementos e suas relações, sempre se perguntando qual tag HTML seria mais adequada para representar cada elemento. Em seguida, você pode começar a escrever o código HTML correspondente, usando as tags apropriadas para estruturar o conteúdo da página. Lembre-se de que a prática é fundamental para aprender HTML, então experimente criar diferentes tipos de páginas web e explore as diversas tags e atributos disponíveis.
+HTML tem uma estrutura básica, mas existem muitas outras tags que ajudam a criar sites mais completos e interativos.
 
-Ao final deste conteúdo, faremos um exercício prático para aplicar os conceitos aprendidos sobre HTML, onde você terá a oportunidade de criar uma página web simples, aplicando corretamente as tags HTML para estruturar o conteúdo de forma semântica e acessível. Este exercício ajudará a consolidar seu entendimento sobre a sintaxe do HTML e a importância de usar as tags apropriadas para cada tipo de conteúdo.
+Uma boa forma de aprender é desenhar no papel como você quer que a página fique e pensar qual tag usar em cada parte. Depois, é só passar isso para o código.
 
-### Estrutura básica de um documento HTML
+O mais importante é praticar: criar páginas diferentes e testar novas tags.
 
-Outro ponto importante a ser abordado é a estrutura básica de um documento HTML. Todo documento HTML deve começar com a declaração do tipo de documento `<!DOCTYPE html>`, que informa ao navegador que o documento é um arquivo HTML5. Em seguida, o documento é estruturado em duas partes principais: o `<head>` e o `<body>`.
+No final, você vai fazer um exercício criando uma página simples para treinar e entender melhor como usar as tags corretamente.
 
-O `<head>` é a seção do documento onde são incluídas informações sobre a página, como o título, links para arquivos CSS, scripts JavaScript, meta tags (metainformações), entre outros. O conteúdo do `<head>` não é exibido diretamente na página, mas é essencial para o funcionamento e a aparência da página web.
+## Estrutura básica de um documento HTML
 
-O `<body>` é a seção do documento onde o conteúdo visível da página é colocado. É aqui que você adiciona os elementos HTML que compõem a estrutura e o conteúdo da página, como títulos, parágrafos, imagens, links etc. O conteúdo do `<body>` é o que os usuários veem quando acessam a página web.
+---
 
-A estrutura básica de um documento HTML pode ser representada da seguinte forma:
+Todo arquivo HTML começa com a declaração `<!DOCTYPE html>`, que informa ao navegador que o documento segue o padrão do HTML5.
+
+Depois disso, o código é dividido em duas partes principais: `<head>` e `<body>`.
+
+* O `<head>` contém informações sobre a página, como título, configurações, links de CSS, scripts e meta tags. Essas informações não aparecem diretamente para o usuário, mas são essenciais para o funcionamento do site.
+
+* O `<body>` é onde fica todo o conteúdo visível da página, como textos, imagens, links e títulos. É a parte que o usuário realmente vê ao acessar o site.
+
+Resumindo: o `<head>` configura a página e o `<body>` mostra o conteúdo.
+
+---
+
+### Exemplo de estrutura básica de um documento HTML:
 
 ```html
 <!DOCTYPE html>
@@ -121,9 +133,19 @@ A estrutura básica de um documento HTML pode ser representada da seguinte forma
 </html>
 ```
 
-> **⚠️ Nota:**
+---
+
+
+> ## **⚠️ Nota:**
 >
-> Todo o código HTML deve ser escrito dentro da tag `<html>`, que é a raiz do documento. O atributo `lang="pt-BR"` indica que o idioma principal do conteúdo da página é o português do Brasil, o que é importante para a acessibilidade e para os mecanismos de busca entenderem o idioma da página. O elemento `<meta charset="UTF-8">` define a codificação de caracteres do documento como UTF-8, garantindo que caracteres acentuados e outros símbolos sejam exibidos corretamente. O elemento `<title>` define o título da página, que é exibido na aba do navegador e nos resultados de busca.
+> ### Todo o código HTML deve ser escrito dentro da tag `<html>`, que é a raiz do documento (ou seja, tudo começa nela).
+>
+> ### O atributo `lang="pt-BR"` indica que o idioma principal da página é o português do Brasil. Isso é importante para acessibilidade e também para mecanismos de busca entenderem melhor o conteúdo.
+>
+> ### A tag `<meta charset="UTF-8">` define a codificação de caracteres, garantindo que acentos e símbolos especiais apareçam corretamente na página.
+>
+> ### Já a tag `<title>` define o título da página, que aparece na aba do navegador e também nos resultados de busca.
+
 
 ### Atributos HTML
 
