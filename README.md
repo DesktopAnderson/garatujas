@@ -19,10 +19,43 @@ HTML é a abreviação de "HyperText Markup Language" que traduzindo para o port
 
 ##  Elementos do HTML
 
+### O que são os elementos do HTML?
 
-O HTML é composto por uma série de elementos , cada um representado por uma **tag** (etiqueta) que define o tipo de conteúdo e sua função na página. Por exemplo, `<h1>` é usado para títulos principais, `<p>` para parágrafos, `<a>` para links, entre outros. O HTML também permite a inclusão de atributos nas tags para fornecer informações adicionais sobre os elementos, como `class`, `id`, `src`, etc.
+Os elementos do HTML são as partes que formam uma página web. Cada elemento é representado por uma **tag**, que indica ao navegador como o conteúdo deve ser exibido.
 
-Antes de seguirmos, imagine um editor de texto como o Microsoft Word ou o Google Docs. Em editores como estes, você costuma selecionar um trecho de texto e aplicar uma formatação, como negrito, itálico ou sublinhado. O HTML é a linguagem que permite marcar o trecho selecionado com uma tag (etiqueta) que indica a formatação desejada, sendo que a sintaxe do HTML é composta por tags (etiquetas) de abertura e fechamento, onde a etiqueta de abertura é escrita entre colchetes angulares `< >` e a etiqueta de fechamento é escrita da mesma forma, mas com uma barra `/` antes do nome da tag. Por exemplo, para criar um parágrafo em HTML, você usaria a tag `<p>` para abrir o parágrafo e `</p>` para fechá-lo. O conteúdo do parágrafo seria colocado entre essas duas tags.
+#### Exemplos:
+- `<h1>` → define um título  
+- `<p>` → define um parágrafo  
+- `<a>` → define um link  
+
+Esses elementos ajudam a **organizar e estruturar** o conteúdo da página.
+
+---
+
+###  Entendendo na prática
+
+Pense em um editor como **[Word](https://pt.wikipedia.org/wiki/Microsoft_Word)** ou **[Google Docs](https://www.about.google/docs/about/?hl=pt-BR)**.
+
+Neles, você:
+- seleciona um texto  
+- aplica formatação (negrito, itálico, etc.)
+
+No HTML, você faz isso usando **tags**.
+
+---
+
+###  Como funcionam as tags?
+
+As tags geralmente têm **abertura e fechamento**:
+
+```html
+<p>Este é um parágrafo</p>
+```
+- `<p>` → abre a tag
+- `</p>` → fecha a tag
+- O conteúdo fica entre elas
+
+## Agora vamos ver, na prática, como transformamos uma ideia de formatação em código HTML:
 
 ![Animação de seleção](docs/select.gif)
 
