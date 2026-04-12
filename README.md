@@ -59,20 +59,39 @@ As tags geralmente têm **abertura e fechamento**:
 
 ![Animação de seleção](docs/select.gif)
 
-Na animação acima, o usuário escreve em um editor a frase `lorem ipsum dolor sit amet potentia` e, então, executa algumas seleções de definição de formatação. A seguir, veremos, passo a passo, o equivalente em HTML para cada uma dessas seleções/formatações.
+---
 
-1. O usuário seleciona `lorem ipsum` e aplica a formatação de negrito.
-  - Em HTML, o código correspondente seria `<strong>lorem ipsum</strong> dolor sit amet potentia`, onde a tag `<strong>` é usada para indicar que o texto deve ser exibido em negrito. No exemplo, a marcação começa com a tag `<strong>` e termina com a tag de fechamento `</strong>`, indicando que o texto entre essas tags deve ser exibido em negrito.
-2. O usuário seleciona `sit amet` e aplica a formatação de itálico.
-  - Em HTML, o código correspondente seria `<strong>lorem ipsum</strong> dolor <em>sit amet</em> potentia`, onde a tag `<em>` é usada para indicar que o texto deve ser exibido em itálico. No exemplo, a marcação começa com a tag `<em>` e termina com a tag de fechamento `</em>`, indicando que o texto entre essas tags deve ser exibido em itálico.
+Na animação, o usuário digita no editor a frase `lorem ipsum dolor sit amet potentia` e, em seguida, aplica algumas formatações. Abaixo está o equivalente em HTML de cada ação:
+
+1. O usuário seleciona `lorem ipsum` e aplica negrito.
+
+   * Em HTML, isso fica:
+```html
+     <strong>lorem ipsum</strong> dolor sit amet potentia
+```
+A tag `<strong>` indica que o texto entre `<strong>` e `</strong>` deve aparecer em negrito.
+
+2. O usuário seleciona `sit amet` e aplica itálico.
+
+   * Em HTML, isso fica:
+```html
+     <strong>lorem ipsum</strong> dolor <em>sit amet</em> potentia
+```    
+A tag `<em>` indica que o texto entre `<em>` e `</em>` deve aparecer em itálico.
+
 3. O usuário seleciona `ipsum dolor sit` e aplica a cor vermelha.
-  - Em HTML, o código correspondente seria `<strong>lorem <span style="color: red;">ipsum dolor sit</span></strong> amet <em>sit amet</em> potentia`, onde a tag `<span>` é usada para aplicar estilos específicos a um trecho de texto, e o atributo `style` é usado para definir a cor do texto como vermelha. No exemplo, a marcação com a tag `<span>` começa antes de `ipsum` e termina após `sit`, indicando que o texto entre essas tags deve ser exibido em vermelho.
 
-> **⚠️ Nota:**
->
-> O HTML é uma linguagem de marcação, e seu principal objetivo é estruturar o conteúdo de uma página web. Caso pesquise na internet, notará que existem outras tags para aplicar formatações como negrito e itálico, como `<b>` e `<i>`, respectivamente. No entanto, as tags `<strong>` e `<em>` são consideradas mais semânticas, pois indicam a importância do texto, enquanto as tags `<b>` e `<i>` são puramente de formatação visual. Portanto, é recomendado usar as tags semânticas para melhorar a acessibilidade e a compreensão do conteúdo.
->
-> `<strong>` e `<em>` fazem sentido tanto para leitores sem deficiência quanto para leitores com deficiência, pois indicam a importância do texto, enquanto `<b>` e `<i>` são puramente de formatação visual e podem não ser interpretados corretamente por leitores de tela ou outros dispositivos assistivos.
+   * Em HTML, isso fica:
+```html
+     <strong>lorem <span style="color: red;">ipsum dolor sit</span></strong> amet <em>sit amet</em> potentia
+```
+ A tag `<span>` é usada para aplicar estilos específicos, e o atributo `style="color: red;"` define a cor vermelha para o trecho selecionado.
+
+---
+
+
+> ## ⚠️ Nota:
+> ### O HTML é uma linguagem de marcação, e seu principal objetivo é estruturar o conteúdo de uma página web. Caso pesquise na internet, notará que existem outras tags para aplicar formatações como negrito e itálico, como `<b>` e `<i>`, respectivamente. No entanto, as tags `<strong>` e `<em>` são consideradas mais semânticas, pois indicam a importância do texto, enquanto as tags `<b>` e `<i>` são puramente de formatação visual. Portanto, é recomendado usar as tags semânticas para melhorar a acessibilidade e a compreensão do conteúdo. `<strong>` e `<em>` fazem sentido tanto para leitores sem deficiência quanto para leitores com deficiência, pois indicam a importância do texto, enquanto `<b>` e `<i>` são puramente de formatação visual e podem não ser interpretados corretamente por leitores de tela ou outros dispositivos assistivos.
 
 Esta é a sintaxe básica do HTML, e existem muitas outras tags e atributos que podem ser usados para criar páginas web mais complexas e interativas. A sugestão de como aprender HTML é desenhar a estrutura de uma página web em um papel, identificando os diferentes elementos e suas relações, sempre se perguntando qual tag HTML seria mais adequada para representar cada elemento. Em seguida, você pode começar a escrever o código HTML correspondente, usando as tags apropriadas para estruturar o conteúdo da página. Lembre-se de que a prática é fundamental para aprender HTML, então experimente criar diferentes tipos de páginas web e explore as diversas tags e atributos disponíveis.
 
@@ -283,4 +302,4 @@ Seletores de descendentes, filhos e irmãos:
 
 ## Praticando o uso de HTML e CSS
 
-... [isso é tema para a próxima aula] ... see you space cowboy!
+... [isso é tema para a próxima aula] ... see you space cowboy!git checkout main
