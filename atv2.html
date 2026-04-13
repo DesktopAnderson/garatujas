@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+
+<head>
+    <meta charset='utf-8'>
+    <title>SIWD - Sistema Integrado de Web Design</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 300px
+        }
+    </style>
+</head>
+
+<body>
+    <form method="get">
+        <div>
+            <label for="inp-matricula">Número de Matricula</label>
+            <input type="number" name="Matricula" id="inp-matricula" required min="0" step="1">
+        </div>
+
+        <div>
+            <label for="inp-nomecompleto">Nome Completo</label>
+            <input type="text" name="nomecompleto" id="inp-nomecompleto" required>
+        </div>
+        <div>
+            <label for="inp-senha">Senha</label>
+            <input type="password" name="senha" id="inp-senha" required>
+        </div>
+                <div>
+            <label for="inp-senha">Confirmar Senha</label>
+            <input type="password" name="confirmarsenha" id="inp-confirmarsenha" required>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+
+</html>
