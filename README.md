@@ -147,54 +147,96 @@ Resumindo: o `<head>` configura a página e o `<body>` mostra o conteúdo.
 > ### Já a tag `<title>` define o título da página, que aparece na aba do navegador e também nos resultados de busca.
 
 
+Aqui vai reescrito **no mesmo estilo que você usou acima** (didático, explicando como se estivesse falando com o aluno, simples e direto 👇):
+
+---
+
 ### Atributos HTML
 
-Os atributos HTML são usados para fornecer informações adicionais sobre os elementos HTML. Eles são escritos dentro da tag de abertura de um elemento e consistem em um nome e um valor, separados por um sinal de igual `=`. Os atributos podem ser usados para definir propriedades específicas de um elemento, como sua aparência, comportamento ou funcionalidade. Por exemplo, o atributo `href` é usado em uma tag `<a>` para especificar o URL de destino de um link, enquanto o atributo `src` é usado em uma tag `<img>` para especificar a fonte da imagem. Os atributos são essenciais para personalizar e controlar o comportamento dos elementos HTML, permitindo que você crie páginas web mais interativas e dinâmicas.
+Os atributos HTML são usados para dar **informações extras** para os elementos.
 
-Imagine que temos a necessidade de criar um link para o site do Google em uma página web. Para isso, podemos usar a tag `<a>` (âncora) e o atributo `href` para especificar o URL do Google. O código HTML correspondente seria:
+Eles ficam dentro da **tag de abertura** e são escritos como:
+
+* um **nome**
+* um **valor**
+* separados por um sinal de igual `=`
+
+Esses atributos servem para definir características do elemento, como aparência, comportamento ou funcionalidade.
+
+Por exemplo:
+
+* o atributo `href` na tag `<a>` define para onde o link vai
+* o atributo `src` na tag `<img>` define qual imagem será exibida
+
+---
+
+### Entendendo na prática
+
+Imagine que queremos criar um link para o Google.
+
+Para isso, usamos a tag `<a>` junto com o atributo `href`, que indica o destino do link:
 
 ```html
 <a href="https://www.google.com">Visite o Google</a>
 ```
 
-O que resultaria em um link clicável com o texto "Visite o Google". Quando o usuário clicar nesse link, ele será redirecionado para a página do Google. O atributo `href` é fundamental para criar links em HTML, e seu valor deve ser um URL válido para garantir que o link funcione corretamente, como é possível ver no resultado abaixo:
+Nesse caso:
 
-[Visite o Google](https://www.google.com)
+* `<a>` → define o link
+* `href="https://www.google.com"` → define o destino
+* `Visite o Google` → é o texto clicável
 
-### Lista de todas as tags HTML
+Quando o usuário clicar nesse link, ele será levado para o site do Google.
 
-Nestes links, você pode encontrar uma lista completa de todas as tags HTML, juntamente com suas descrições e exemplos de uso: [MDN Web Docs - Elementos HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element) ou [W3Schools - HTML Tags](https://www.w3schools.com/TAGS/default.asp).
+---
 
-## CSS - Cascading Style Sheets (Folhas de Estilo em Cascata)
+### Links úteis
 
-O CSS é uma linguagem de estilo usada para controlar a aparência e o layout de uma página web. Ele permite que você defina regras de estilo para os elementos HTML, como cores, fontes, margens, espaçamento, entre outros. O CSS é separado do HTML, o que significa que você pode manter a estrutura do conteúdo (HTML) separada da apresentação visual (CSS). Isso torna o código mais organizado e facilita a manutenção do site. O CSS é composto por seletores e declarações. Os seletores são usados para selecionar os elementos HTML aos quais as regras de estilo serão aplicadas, enquanto as declarações definem as propriedades de estilo e seus valores. Veja o exemplo abaixo:
+Se quiser ver todas as tags HTML disponíveis, você pode acessar:
 
-Considere o seguinte código HTML:
+* MDN Web Docs (documentação oficial)
+* W3Schools (mais simples e direto)
+
+---
+
+## CSS - O que é? Para que serve?
+
+O CSS (Cascading Style Sheets) é a linguagem usada para definir a **aparência** de uma página web.
+
+Enquanto o HTML organiza o conteúdo, o CSS cuida de coisas como:
+
+* cores
+* fontes
+* espaçamento
+* layout
+
+Ou seja, o HTML é o **esqueleto** e o CSS é a **aparência**.
+
+---
+
+### Como o CSS funciona?
+
+O CSS funciona através de **regras de estilo**.
+
+Cada regra tem:
+
+* um **seletor** → escolhe o elemento
+* um **bloco de declarações** → define o estilo
+
+---
+
+### Exemplo na prática
+
+Considere esse HTML:
 
 ```html
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-   <meta charset="UTF-8">
-   <title>Exemplo de CSS</title>
-   <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-   <h1>Olá, Mundo!</h1>
-   <p>Este é um exemplo de CSS.</p>
-</body>
-</html>
+<h1>Olá, Mundo!</h1>
+<p>Este é um exemplo de CSS.</p>
 ```
 
-Neste exemplo, temos um documento HTML básico com um título e um parágrafo. O arquivo CSS externo `styles.css` é vinculado ao documento HTML usando a tag `<link>` no `<head>`. O conteúdo do arquivo `styles.css` pode ser o seguinte:
+Agora um CSS simples:
 
 ```css
-/* styles.css */
-body {
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
-}
-
 h1 {
   color: #333333;
   text-align: center;
@@ -203,125 +245,162 @@ h1 {
 p {
   color: #666666;
   font-size: 18px;
-  margin: 20px;
 }
 ```
 
-> **⚠️ Nota:**
+Nesse caso:
+
+* o `<h1>` fica centralizado e com cor escura
+* o `<p>` fica com cor mais clara e tamanho maior
+
+---
+
+> ## ⚠️ Nota:
 >
-> No exemplo acima, o CSS é aplicado ao HTML, pois o arquivo `styles.css` está vinculado ao documento HTML usando a tag `<link>` no `<head>`. O CSS define o estilo para o elemento `<body>`, o título `<h1>` e o parágrafo `<p>`, controlando a aparência da página web. O CSS é uma parte essencial do desenvolvimento web, pois permite que você crie páginas visualmente atraentes e responsivas, melhorando a experiência do usuário.
+> O CSS normalmente fica em um arquivo separado (ex: `styles.css`) e é conectado ao HTML usando a tag `<link>`. Isso ajuda a manter o código organizado.
 
-O resultado do exemplo acima seria uma página web com um fundo cinza claro, um título centralizado em cor escura e um parágrafo com uma cor mais clara, tamanho de fonte maior e margens ao redor do texto. O CSS é uma ferramenta poderosa para personalizar a aparência de uma página web e criar designs únicos e atraentes.
+---
 
-![CSS Aplicado](docs/image-css.png)
+### Sem CSS
 
-Sem o CSS, a página web seria exibida com o estilo padrão do navegador, que pode variar dependendo do navegador e do sistema operacional. Chamamos isso de `user agent stylesheet`, que é o estilo padrão aplicado pelo navegador aos elementos HTML. O CSS permite que você substitua esse estilo padrão e crie uma aparência personalizada para a sua página web, controlando aspectos como cores, fontes, layout, espaçamento, entre outros. Sem o CSS, a página web seria exibida de forma básica e sem formatação, o que pode resultar em uma experiência de usuário menos atraente e menos profissional.
+Sem o CSS, o site usa o estilo padrão do navegador.
 
-Sem o CSS que escrevemos, teríamos o seguinte resultado:
+Isso é chamado de **user agent stylesheet**, que nada mais é do que o estilo básico aplicado automaticamente.
 
-![Sem CSS](docs/image-css-none.png)
+Ou seja:
 
-### Sintaxe do CSS
+* sem CSS → página simples e sem design
+* com CSS → página personalizada e mais bonita
 
-A sintaxe do CSS é composta por regras de estilo, onde cada regra é formada por um seletor e um bloco de declarações. O seletor é usado para selecionar os elementos HTML aos quais as regras de estilo serão aplicadas, enquanto o bloco de declarações define as propriedades de estilo e seus valores. A sintaxe básica do CSS pode ser representada da seguinte forma:
+---
+
+## Sintaxe do CSS
+
+A estrutura básica do CSS é:
 
 ```css
 seletor {
   propriedade: valor;
-  propriedade: valor;
-  /* ... */
 }
 ```
 
-> **⚠️ Nota:**
->
-> O seletor pode ser um nome de elemento HTML, uma classe, um ID ou uma combinação desses. As propriedades de estilo são palavras-chave que definem o aspecto visual dos elementos, como `color`, `font-size`, `background-color` etc. Os valores são atribuídos às propriedades para especificar o estilo desejado, como `red`, `16px`, `#f0f0f0` etc. Cada declaração dentro do bloco de declarações deve ser separada por um ponto e vírgula `;`, e o bloco de declarações deve ser encerrado com uma chave `}`.
+Exemplo:
 
-### Seletores CSS
-
-Os seletores CSS são usados para selecionar os elementos HTML aos quais as regras de estilo serão aplicadas. A lógica dos seletores é baseada na estrutura do documento HTML (seguindo a hierarquia de elementos, por isso o nome "cascading" — em cascata), e eles permitem que você aplique estilos a elementos específicos ou a grupos de elementos com base em suas características, como tipo, classe, ID, atributos, entre outros.
-
-Considere o seguinte código HTML:
-
-```html
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-   <meta charset="UTF-8">
-   <title>Exemplo de Seletores CSS</title>
-   <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-   <h1 class="titulo">Título Principal</h1>
-   <p id="paragrafo1">Este é o primeiro parágrafo.</p>
-   <p id="paragrafo2">Este é o segundo parágrafo.</p>
-   <a href="#" class="link">Este é um link</a>
-</body>
-</html>
+```css
+p {
+  color: red;
+}
 ```
 
-Para aplicar estilos a esses elementos usando CSS, podemos usar diferentes tipos de seletores. Por exemplo:
+---
 
-1. Seletor de tipo: para selecionar todos os elementos de um determinado tipo, como `<h1>`, `<p>`, `<a>` etc. Exemplo: `h1 { color: blue; }` aplicaria a cor azul a todos os elementos `<h1>` na página.
-2. Seletor de classe: para selecionar elementos com uma classe específica. Exemplo: `.titulo { font-size: 24px; }` aplicaria um tamanho de fonte de 24 pixels a todos os elementos com a classe "titulo".
-3. Seletor de ID: para selecionar um elemento com um ID específico. Exemplo: `#paragrafo1 { color: red; }` aplicaria a cor vermelha apenas ao elemento com o ID "paragrafo1".
-4. Seletor de atributo: para selecionar elementos com um atributo específico ou um valor de atributo específico. Exemplo: `a[href="#"] { text-decoration: none; }` removeria o sublinhado de todos os links que têm um atributo `href` com o valor "#".
-5. Pseudo-classes: para selecionar elementos com base em seu estado ou posição na hierarquia do documento. Exemplo: `p:first-child { font-weight: bold; }` aplicaria negrito ao primeiro parágrafo dentro de seu elemento pai.
+> ## ⚠️ Nota:
+>
+> * o seletor define *quem será estilizado*
+> * a propriedade define *o que será alterado*
+> * o valor define *como será alterado*
+> * cada linha termina com `;`
 
-Como dito, a hierarquia dos elementos HTML é fundamental para entender como os seletores CSS funcionam, pois eles seguem a estrutura do documento para aplicar estilos. Considere um parágrafo que, por sua vez, está dentro de uma seção, que, por sua vez, está dentro do conteúdo principal da página. No HTML, isso seria algo como:
+---
+
+## Seletores CSS
+
+Os seletores servem para escolher quais elementos do HTML vão receber estilo.
+
+---
+
+### Tipos mais comuns
+
+1. **Seletor de tipo**
+
+   * seleciona elementos pelo nome
+
+   ```css
+   p { color: blue; }
+   ```
+
+2. **Seletor de classe**
+
+   * seleciona por classe
+
+   ```css
+   .titulo { font-size: 24px; }
+   ```
+
+3. **Seletor de ID**
+
+   * seleciona por ID
+
+   ```css
+   #paragrafo1 { color: red; }
+   ```
+
+4. **Seletor de atributo**
+
+   ```css
+   a[href="#"] { text-decoration: none; }
+   ```
+
+5. **Pseudo-classes**
+
+   ```css
+   p:first-child { font-weight: bold; }
+   ```
+
+---
+
+### Hierarquia (muito importante)
+
+O CSS segue a estrutura do HTML.
+
+Exemplo:
 
 ```html
 <main>
   <section>
-   <p>Este é um parágrafo dentro de uma seção...</p>
+    <p>Texto aqui</p>
   </section>
 </main>
 ```
 
-Para selecionar e estilizar os parágrafos dentro dessa estrutura, você poderia usar um seletor de descendente como `main section p { color: green; }`, que aplicaria a cor verde a todos os parágrafos que estão dentro de uma seção, que, por sua vez, está dentro do elemento principal `<main>`. Isso demonstra como os seletores CSS seguem a hierarquia dos elementos HTML para aplicar estilos de forma específica e direcionada.
+Se usarmos:
 
-> **⚠️ Nota:**
+```css
+main section p {
+  color: green;
+}
+```
+
+Isso significa:
+
+* selecione `<p>`
+* que está dentro de `<section>`
+* que está dentro de `<main>`
+
+---
+
+> ## ⚠️ Nota:
 >
-> Os espaços entre os seletores indicam uma relação de descendência, ou seja, o seletor `main section p` seleciona todos os elementos `<p>` que são descendentes de um elemento `<section>`, que por sua vez é um descendente de um elemento `<main>`. Isso permite que você aplique estilos de forma mais específica, garantindo que apenas os elementos desejados sejam afetados pelas regras de estilo.
+> O espaço entre os seletores indica que um elemento está **dentro do outro** (relação de descendente).
 
-Se, no HTML que usamos de exemplo, tivéssemos um parágrafo fora da seção, como:
+---
 
-```html
-<main>
-  <section>
-   <p>Este é um parágrafo dentro de uma seção...</p>
-  </section>
-  <p>Este é um parágrafo fora da seção...</p>
-</main>
-```
+### Tipos de relações
 
-O seletor `main section p` aplicaria a cor verde apenas ao parágrafo dentro da seção, enquanto o parágrafo fora da seção não seria afetado por essa regra de estilo. Isso demonstra como os seletores CSS permitem que você controle a aplicação de estilos com base na hierarquia dos elementos HTML, garantindo que apenas os elementos desejados sejam estilizados de acordo com as regras definidas.
+* `elemento1 elemento2` → descendente
+* `elemento1 > elemento2` → filho direto
+* `elemento1 + elemento2` → irmão imediato
+* `elemento1 ~ elemento2` → irmãos em geral
 
-Resultando em algo como:
+---
 
-![Seletores CSS](docs/image-css-selectors.png)
+## Praticando
 
-### Tipos de Seletores CSS
+A melhor forma de aprender HTML e CSS é praticando:
 
-Existem vários tipos de seletores CSS que permitem selecionar elementos HTML de diferentes maneiras. Abaixo está uma tabela com alguns dos tipos de seletores mais comuns. Esta tabela tem o intuito de servir como um guia rápido para entender os diferentes tipos de seletores CSS e como eles funcionam. No entanto, existem muitos outros tipos de seletores CSS; abordaremos esses outros tipos em conteúdos futuros. Por enquanto, foque em entender os tipos de seletores mais comuns listados abaixo, pois eles são os mais utilizados e fundamentais para o aprendizado do CSS.
+* criar páginas simples
+* testar estilos diferentes
+* modificar códigos e ver o resultado
 
-| Tipo de Seletor               | Exemplo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Descrição |
-|------------------------------ | -------------------------------- | --------- |
-| Seletor de Tipo               | `nome_elemento { }`              | Seleciona todos os elementos de um determinado tipo. Exemplo: `p { color: blue; }` seleciona todos os parágrafos e aplica a cor azul. |
-| Seletor de Classe             | `.nome_classe { }`               | Seleciona elementos com uma classe específica. Exemplo: `.titulo { font-size: 24px; }` seleciona todos os elementos com a classe "titulo" e aplica um tamanho de fonte de 24 pixels. |
-| Seletor de ID                 | `#nome_id { }`                   | Seleciona um elemento com um ID específico. Exemplo: `#paragrafo1 { color: red; }` seleciona o elemento com o ID "paragrafo1" e aplica a cor vermelha. |
-| Seletor de Atributo           | `elemento[atributo="valor"] { }` | Seleciona elementos com um atributo específico ou um valor de atributo específico. Exemplo: `a[href="#"] { text-decoration: none; }` seleciona todos os links que têm um atributo `href` com o valor "#" e remove o sublinhado. |
-| Pseudo-classes                | `elemento:pseudo-classe { }`     | Seleciona elementos com base em seu estado ou posição na hierarquia do documento. Exemplo: `p:first-child { font-weight: bold; }` seleciona o primeiro parágrafo dentro de seu elemento pai e aplica negrito. |
-
-Seletores de descendentes, filhos e irmãos:
-
-| Tipo de Seletor               | Exemplo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Descrição |
-|------------------------------ | -------------------------------- | --------- |
-| Seletor de Descendente        | `elemento1 elemento2 { }`        | Seleciona elementos que são descendentes de um elemento específico. Exemplo: `main section p { color: green; }` seleciona todos os parágrafos que estão dentro de uma seção, que por sua vez está dentro do elemento principal `<main>`, e aplica a cor verde. |
-| Seletor de Filho              | `elemento1 > elemento2 { }`      | Seleciona elementos que são filhos diretos de um elemento específico. Exemplo: `main > section { background-color: lightgray; }` seleciona todas as seções que são filhos diretos do elemento principal `<main>` e aplica um fundo cinza claro. |
-| Seletor de Irmão Adjacente    | `elemento1 + elemento2 { }`      | Seleciona um elemento que é imediatamente precedido por outro elemento específico. Exemplo: `h1 + p { margin-top: 0; }` seleciona o parágrafo que vem imediatamente após um título `<h1>` e remove a margem superior. |
-| Seletor de Irmão Generalizado | `elemento1 ~ elemento2 { }`      | Seleciona elementos que são irmãos de um elemento específico, independentemente de sua posição. Exemplo: `h1 ~ p { color: gray; }` seleciona todos os parágrafos que são irmãos de um título `<h1>` e aplica a cor cinza. |
-
-## Praticando o uso de HTML e CSS
-
-... [isso é tema para a próxima aula] ... see you space cowboy!git checkout main
+## Praticando o uso de HTML e CSS ...
+[isso é tema para a próxima aula] ... see you space cowboy! 
